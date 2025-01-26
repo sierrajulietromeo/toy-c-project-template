@@ -27,6 +27,12 @@ TEST(test_add) {
   ASSERT(add(-1, -1) == -2);
 }
 
+TEST(test_subtract) {
+  ASSERT(subtract(1, 2) == -1);
+  ASSERT(subtract(0, 0) == 0);
+  ASSERT(subtract(-1, -1) == 0);
+}
+
 TEST(test_string_assert) {
   ASSERT_STR_EQ("hello", "hello");
 }
@@ -34,6 +40,7 @@ TEST(test_string_assert) {
 int main() {
   // Add a `RUN_TEST` line for each test function
   RUN_TEST(test_add);
+  RUN_TEST(test_subtract);
   RUN_TEST(test_string_assert);
   return failed;
 }

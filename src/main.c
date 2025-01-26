@@ -2,7 +2,14 @@
 #include "lib.c"
 
 int main() {
-  int result = add(40, 2);
-  printf("40 + 2 = %d\n", result);
+
+  int val1 = 40;
+  int val2 = 2;
+
+  int result1 = add(val1, val2);
+  int result2 = subtract(val1, val2);
+  
+  printf("%d + %d = %d\n",val1, val2, result1);
+  printf("%d - %d = %d\n", val1, val2, result2);
   return 0;
 }
