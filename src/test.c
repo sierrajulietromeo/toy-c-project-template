@@ -38,6 +38,10 @@ TEST(test_divide) {
   ASSERT(divide(10, 2) == 5);
   ASSERT(divide(-6, 2) == -3);
 }
+ 
+TEST(test_mult){
+  ASSERT(mult(2, 2) == 4);
+}
 
 TEST(test_string_assert) {
   ASSERT_STR_EQ("hello", "hello");
@@ -48,6 +52,7 @@ int main() {
   RUN_TEST(test_add);
   RUN_TEST(test_subtract);
   RUN_TEST(test_divide);
+  RUN_TEST(test_mult);
   RUN_TEST(test_string_assert);
   return failed;
 }
