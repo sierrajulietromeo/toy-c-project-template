@@ -13,3 +13,7 @@ int divide(int a, int b) {
 int mult(int a, int b) {
   return a * b;
 }
+
+int xor(int a, int b) {
+  return a ^ b;
+}
