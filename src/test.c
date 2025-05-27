@@ -47,6 +47,14 @@ TEST(test_string_assert) {
   ASSERT_STR_EQ("hello", "hello");
 }
 
+TEST(test_xor) {
+  ASSERT(xor(0, 0) == 0);
+  ASSERT(xor(1, 0) == 1);
+  ASSERT(xor(0, 1) == 1);
+  ASSERT(xor(1, 1) == 0);
+  ASSERT(xor(5, 3) == 6);  // 101 ^ 011 = 110 (binary) = 6 (decimal)
+}
+
 int main() {
   // Add a `RUN_TEST` line for each test function
   RUN_TEST(test_add);
@@ -54,5 +62,6 @@ int main() {
   RUN_TEST(test_divide);
   RUN_TEST(test_mult);
   RUN_TEST(test_string_assert);
+  RUN_TEST(test_xor);
   return failed;
 }

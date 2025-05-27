@@ -4,7 +4,7 @@
 int main() {
 
 
-  char string1[5] = "Hello";
+  char string1[6] = "Hello";
   int val1 = 40;
   int val2 = 2;
 
